@@ -1,4 +1,9 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'maven-publish'
+
+group = 'com.github.todo2088'
+version = '1.0'
 
 android {
     compileSdkVersion 32
@@ -69,4 +74,18 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 artifacts {
     archives javadocJar
     archives sourcesJar
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.todo2088'
+                artifactId = 'XXPermissions'
+                version = '13.5'
+            }
+        }
+    }
 }

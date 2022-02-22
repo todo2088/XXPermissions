@@ -11,7 +11,7 @@ android {
         minSdkVersion 11
         targetSdkVersion 32
         versionCode 1350
-        versionName "13.5"
+        versionName "13.5.1"
     }
 
     // 使用 JDK 1.8

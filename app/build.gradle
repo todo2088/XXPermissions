@@ -54,7 +54,9 @@ dependencies {
     // 依赖 libs 目录下所有的 jar 和 aar 包
     implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
-    implementation project(':library')
+    // implementation project(':library')
+    // 权限请求框架：https://github.com/getActivity/XXPermissions
+    implementation 'com.github.todo2088:XXPermissions:13.5.1'
 
     // 谷歌兼容库：https://developer.android.google.cn/jetpack/androidx/releases/appcompat?hl=zh-cn
     // noinspection GradleCompatible

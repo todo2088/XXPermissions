@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
 
 group = 'com.github.todo2088'
-version = '1.0'
+version = '13.5.1'
 
 android {
     compileSdkVersion 32
@@ -84,7 +84,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.todo2088'
                 artifactId = 'XXPermissions'
-                version = '13.5'
+                version = '13.5.1'
             }
         }
     }

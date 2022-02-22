@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
 
 group = 'com.github.todo2088'
@@ -10,6 +9,7 @@ android {
 
     defaultConfig {
         minSdkVersion 11
+        targetSdkVersion 32
         versionCode 1350
         versionName "13.5"
     }
